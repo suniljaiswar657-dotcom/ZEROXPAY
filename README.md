@@ -34,6 +34,9 @@ India-first fintech concept: Android-first customer experience, responsive web, 
 - [Product specification](docs/PRODUCT_SPEC.md)
 - [India compliance and operating architecture](docs/COMPLIANCE_ARCHITECTURE.md)
 - [Execution roadmap](docs/EXECUTION_ROADMAP.md)
+- [Backend V1 architecture and setup](docs/BACKEND_V1.md)
+- [Supabase setup instructions](supabase/README.md)
+- [Backend V1 SQL migration](supabase/migrations/20261125000100_backend_v1.sql)
 
 ## Non-negotiable safeguards
 
@@ -43,10 +46,11 @@ India-first fintech concept: Android-first customer experience, responsive web, 
 - Payment status must be server-authoritative; a client success screen is not proof of settlement.
 - Use least privilege, encryption, audit logging, secrets management, rate limits, and tested incident response.
 - Follow applicable Indian payment-data storage/localization requirements.
+- Never expose a Supabase service-role or secret key in browser code.
 
 ## Status
 
-**Simulator UI stage.** A responsive dashboard and local-only demo payment interaction are implemented. No live payment processing is implemented.
+**Backend V1 foundation committed.** The repository now contains a Supabase PostgreSQL schema, role model, RLS policies, and setup documentation. The migration has **not** been applied to a hosted database; the static simulator is not yet connected to Supabase. No live payment processing is implemented.
 
 ## Disclaimer
 
