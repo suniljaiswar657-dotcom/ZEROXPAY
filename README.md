@@ -46,7 +46,7 @@ India-first fintech concept: Android-first customer experience, responsive web, 
 
 ## Status
 
-**Foundation stage.** No live payment processing is implemented.
+**Simulator UI stage.** A responsive dashboard and local-only demo payment interaction are implemented. No live payment processing is implemented.
 
 ## Disclaimer
 
